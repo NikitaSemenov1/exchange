@@ -1,0 +1,31 @@
+/snap/clion/250/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/snap/clion/250/bin/ninja/linux/x64/ninja -DCMAKE_TOOLCHAIN_FILE=/home/nikita/tools/vcpkg/scripts/buildsystems/vcpkg.cmake -G Ninja -S /home/nikita/workspace/templateofclientservermatching -B /home/nikita/workspace/templateofclientservermatching/cmake-build-debug
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Warning at /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindBoost.cmake:1384 (message):
+  New Boost version may have incorrect or missing dependencies and imported
+  targets
+Call Stack (most recent call first):
+  /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindBoost.cmake:1508 (_Boost_COMPONENT_DEPENDENCIES)
+  /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindBoost.cmake:2119 (_Boost_MISSING_DEPENDENCIES)
+  /home/nikita/tools/vcpkg/installed/x64-linux/share/boost/vcpkg-cmake-wrapper.cmake:11 (_find_package)
+  /home/nikita/tools/vcpkg/scripts/buildsystems/vcpkg.cmake:806 (include)
+  CMakeLists.txt:4 (FIND_PACKAGE)
+
+
+-- Found Boost: /home/nikita/tools/vcpkg/installed/x64-linux/include (found suitable version "1.82.0", minimum required is "1.40") found components: system 
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Configuring done (2.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/nikita/workspace/templateofclientservermatching/cmake-build-debug

@@ -1,0 +1,4 @@
+/home/nikita/workspace/templateofclientservermatching/cmake-build-debug/CMakeFiles/Server.dir
+/home/nikita/workspace/templateofclientservermatching/cmake-build-debug/CMakeFiles/Client.dir
+/home/nikita/workspace/templateofclientservermatching/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/nikita/workspace/templateofclientservermatching/cmake-build-debug/CMakeFiles/rebuild_cache.dir
