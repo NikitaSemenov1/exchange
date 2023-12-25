@@ -1,7 +1,7 @@
 #include <iostream>
 #include <boost/asio.hpp>
 
-#include "core/Common.hpp"
+#include "core/common.hpp"
 #include "json.hpp"
 
 using boost::asio::ip::tcp;

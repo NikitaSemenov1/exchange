@@ -5,7 +5,7 @@
 
 #include "concurrentqueue/concurrentqueue.h"
 
-#include "Account.hpp"
+#include "account.hpp"
 
 namespace exchange {
 
@@ -28,7 +28,7 @@ struct OrderSell {
 };
 
 
-class Exchange {
+class exchange {
 public:
 
   static constexpr MoneyType kMinQueuePrice = 5000;  // 50 rubles

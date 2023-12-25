@@ -1,5 +1,4 @@
-#include "Exchange.hpp"
-
+#include "exchange.hpp"
 
 namespace exchange {
 
@@ -24,7 +23,7 @@ void MakeDeal(OrderBuy &buy_order, OrderSell &sell_order) {
 }
 
 
-void Exchange::Bid(OrderBuy &&order) {
+void exchange::Bid(OrderBuy &&order) {
   for (MoneyType price_it = kMinQueuePrice; price_it <= order.bid; ++price_it) {
     auto &queue = sell_queue_[PriceToQueueIndex(price_it)];
     OrderSell matched_order;
@@ -43,7 +42,7 @@ void Exchange::Bid(OrderBuy &&order) {
   buy_queue_[PriceToQueueIndex(order.bid)].enqueue(std::move(order));
 }
 
-void Exchange::Ask(OrderSell &&order) {
+void exchange::Ask(OrderSell &&order) {
   for (MoneyType price_it = kMaxSellPrice; price_it >= order.ask; --price_it) {
     auto &queue = buy_queue_[PriceToQueueIndex(price_it)];
     OrderBuy matched_order;
@@ -62,7 +61,7 @@ void Exchange::Ask(OrderSell &&order) {
 
 }
 
-std::size_t Exchange::PriceToQueueIndex(MoneyType price) {
+std::size_t exchange::PriceToQueueIndex(MoneyType price) {
   price = std::max(price, kMinQueuePrice);
   price = std::min(price, kMaxSellPrice);
 
